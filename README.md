@@ -33,24 +33,24 @@ first check the NVIDIA version in cmd.
 </div>
 I install <code>cuda-12.0.1.</code> <br>
 Install pytorch with <code>pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118</code><br>
-Pytorch官网上会给出指定的安装指令：<code>pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118</code> <br>
-测试用例：
+Pytorch：<code>pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118</code> <br>
+Test samples：
 
 ```python
 import torch
 
-#### 创建一个随机的张量
+#### create a random tensor
 x = torch.rand(5, 3)
 print("Random Tensor:")
 print(x)
 
-#### 检查CUDA是否可用，并在可用时将张量移动到GPU
+#### check if CUDA available
 if torch.cuda.is_available():
     x = x.cuda()
     print("Tensor on CUDA:")
     print(x)
 ```
-安装成功
+Installed Successfully
 <div align="center">
   <img alt="Demo" src="./src/pytorch.png" style="width:50%; height:50%" />
 </div>
